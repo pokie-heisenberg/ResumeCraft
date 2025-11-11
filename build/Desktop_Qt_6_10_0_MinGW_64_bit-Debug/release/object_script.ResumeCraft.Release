@@ -1,0 +1,10 @@
+release/PersonalInfo.o
+release/Education.o
+release/Experience.o
+release/Skill.o
+release/UserProfile.o
+release/TemplateEngine.o
+release/PDFExporter.o
+release/mainwindow.o
+release/main.o
+release/moc_MainWindow.o

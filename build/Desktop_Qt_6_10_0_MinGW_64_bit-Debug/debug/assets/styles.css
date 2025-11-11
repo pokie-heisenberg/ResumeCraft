@@ -1,0 +1,11 @@
+/* ResumeCraft global stylesheet */
+:root { --primary:#0078D7; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; }
+body { background:#f7f9fb; }
+a { color: var(--primary); text-decoration: none; }
+.container, .wrap, .card { border-radius:10px; }
+.card { box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+#education h2, #experience h2, #skills h2, #summary h2 { color: var(--primary); }
+.skill .bar { background:#e9eef5; }
+.skill .fill { background: var(--primary); }

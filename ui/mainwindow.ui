@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ResumeCraft</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text">
+       <string>&lt;h1 style=&quot;text-align:center;color:#0078D7;margin:8px 0;&quot;&gt;ResumeCraft&lt;/h1&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="leftPanel">
+       <layout class="QVBoxLayout" name="leftLayout">
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <widget class="QWidget" name="tabPersonal">
+           <attribute name="title">
+            <string>Personal Info</string>
+           </attribute>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelName">
+              <property name="text">
+               <string>Name*</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="nameEdit"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelEmail">
+              <property name="text">
+               <string>Email*</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="emailEdit"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="labelPhone">
+              <property name="text">
+               <string>Phone</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="phoneEdit"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="labelAddress">
+              <property name="text">
+               <string>Address</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="addressEdit"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="labelSummary">
+              <property name="text">
+               <string>Summary</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QTextEdit" name="summaryEdit"/>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="labelPhoto">
+              <property name="text">
+               <string>Photo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <layout class="QHBoxLayout" name="photoLayout">
+              <item>
+               <widget class="QLineEdit" name="photoPathEdit"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="browsePhotoButton">
+                <property name="text">
+                 <string>Browse…</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tabEducation">
+           <attribute name="title">
+            <string>Education</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="eduLayout">
+            <item>
+             <widget class="QTableWidget" name="eduTable"/>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="eduButtons">
+              <item><widget class="QPushButton" name="addEduButton"><property name="text"><string>Add</string></property></widget></item>
+              <item><widget class="QPushButton" name="removeEduButton"><property name="text"><string>Remove</string></property></widget></item>
+              <item><spacer name="eduSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tabExperience">
+           <attribute name="title">
+            <string>Experience</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="expLayout">
+            <item>
+             <widget class="QTableWidget" name="expTable"/>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="expButtons">
+              <item><widget class="QPushButton" name="addExpButton"><property name="text"><string>Add</string></property></widget></item>
+              <item><widget class="QPushButton" name="removeExpButton"><property name="text"><string>Remove</string></property></widget></item>
+              <item><spacer name="expSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tabSkills">
+           <attribute name="title">
+            <string>Skills</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="skillLayout">
+            <item>
+             <widget class="QTableWidget" name="skillTable"/>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="skillButtons">
+              <item><widget class="QPushButton" name="addSkillButton"><property name="text"><string>Add</string></property></widget></item>
+              <item><widget class="QPushButton" name="removeSkillButton"><property name="text"><string>Remove</string></property></widget></item>
+              <item><spacer name="skillSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tabTemplate">
+           <attribute name="title">
+            <string>Template</string>
+           </attribute>
+           <layout class="QFormLayout" name="templateLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelTemplate">
+              <property name="text"><string>Choose Template</string></property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="templateCombo"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="actionButtons">
+          <item><widget class="QPushButton" name="generateButton"><property name="text"><string>Generate Resume</string></property></widget></item>
+          <item><widget class="QPushButton" name="exportHtmlButton"><property name="text"><string>Export HTML</string></property></widget></item>
+          <item><widget class="QPushButton" name="exportPdfButton"><property name="text"><string>Export PDF</string></property></widget></item>
+          <item><spacer name="bottomSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="rightPanel">
+       <layout class="QVBoxLayout" name="rightLayout">
+        <item>
+         <widget class="QTextBrowser" name="previewBrowser"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
