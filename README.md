@@ -167,55 +167,6 @@ graph LR
     style D fill:#FF6B6B,stroke:#333,stroke-width:2px
 ```
 
----
-
-## 📂 Project Structure
-
-```
-ResumeCraft/
-├── src/
-│   ├── components/
-│   │   ├── Landing/           # Landing page components
-│   │   ├── TemplateGallery/   # Template selection
-│   │   ├── Editor/            # Resume editor components
-│   │   │   ├── PersonalInfo/
-│   │   │   ├── Experience/
-│   │   │   ├── Education/
-│   │   │   ├── Skills/
-│   │   │   └── Projects/
-│   │   ├── Preview/           # Live preview
-│   │   │   └── Templates/     # Template designs
-│   │   ├── Export/            # Export functionality
-│   │   └── Common/            # Reusable components
-│   │       ├── Button/
-│   │       ├── Input/
-│   │       ├── Modal/
-│   │       └── Card/
-│   ├── context/
-│   │   ├── ResumeContext.tsx  # Resume data state
-│   │   └── ThemeContext.tsx   # Theme management
-│   ├── hooks/
-│   │   ├── useLocalStorage.ts # Persistent storage
-│   │   ├── useAutoSave.ts     # Auto-save functionality
-│   │   └── useExport.ts       # Export logic
-│   ├── utils/
-│   │   ├── pdfGenerator.ts    # PDF generation
-│   │   ├── docxGenerator.ts   # DOCX generation
-│   │   └── validators.ts      # Form validation
-│   ├── types/
-│   │   └── resume.types.ts    # TypeScript definitions
-│   ├── styles/
-│   │   └── globals.css        # Global styles
-│   ├── App.tsx
-│   └── main.tsx
-├── public/
-│   ├── templates/             # Template previews
-│   └── assets/
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── tailwind.config.js
-```
 
 ---
 
@@ -255,23 +206,6 @@ ResumeCraft/
 
 ---
 
-## 🗺️ Roadmap
-
-- [x] Core resume builder functionality
-- [x] Multiple professional templates
-- [x] PDF export
-- [x] Auto-save feature
-- [x] Responsive design
-- [ ] AI-powered content suggestions
-- [ ] Cover letter builder
-- [ ] LinkedIn profile import
-- [ ] Resume analysis & scoring
-- [ ] Multi-language support
-- [ ] Collaboration features
-- [ ] Resume templates marketplace
-- [ ] Video resume integration
-
----
 
 ## 🤝 Contributing
 
@@ -321,7 +255,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [GitHub Issues](https://github.com/pokie-heisenberg/ResumeCraft/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/pokie-heisenberg/ResumeCraft/discussions)
-- **Email**: support@resumecraft.dev
+- **Email**: sarthakparkale15@gmail.com
 
 ---
 
@@ -329,7 +263,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ to help job seekers land their dream roles**
 
-Made by [pokie-heisenberg](https://github.com/pokie-heisenberg)
+Made by [pokie-heisenberg](https://github.com/pokie-heisenberg)[Sarthak](https://github.com/Failureguy94)
 
 ⭐ Star this repo if it helps you land your next job!
 
