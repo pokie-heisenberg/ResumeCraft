@@ -139,35 +139,6 @@ flowchart TD
     style J fill:#4ECDC4,stroke:#333,stroke-width:2px
 ```
 
-### Feature Architecture
-
-```mermaid
-graph LR
-    A[ResumeCraft] --> B[Editor]
-    A --> C[Preview]
-    A --> D[Export]
-    
-    B --> E[Personal Info]
-    B --> F[Experience]
-    B --> G[Education]
-    B --> H[Skills]
-    B --> I[Projects]
-    
-    C --> J[Template 1]
-    C --> K[Template 2]
-    C --> L[Template 3]
-    
-    D --> M[PDF Export]
-    D --> N[DOCX Export]
-    D --> O[Print]
-    
-    style A fill:#4ECDC4,stroke:#333,stroke-width:3px
-    style B fill:#45B7D1,stroke:#333,stroke-width:2px
-    style C fill:#96CEB4,stroke:#333,stroke-width:2px
-    style D fill:#FF6B6B,stroke:#333,stroke-width:2px
-```
-
-
 ---
 
 ## 🎯 How It Works
